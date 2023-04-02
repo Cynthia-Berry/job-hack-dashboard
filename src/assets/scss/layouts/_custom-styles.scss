@@ -1,0 +1,280 @@
+@import "../variables";
+@import "src/assets/scss/utils/mixins";
+
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  border-radius: 10px;
+}
+
+.main-signin-wrapper {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.card-width {
+  width: 35%;
+  border-radius: 10px !important;
+  @include sm {
+    width: 95%;
+  }
+  @include md {
+    width: 75%;
+  }
+  @include lg {
+    width: 60%;
+  }
+  @include xl {
+    width: 40%;
+  }
+}
+
+.form-control {
+  line-height: 2;
+}
+
+%custom-form {
+  h5 {
+    color: $primary-text;
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+
+  div {
+    margin-top: 1rem;
+  }
+
+  input {
+    background-color: $form-field;
+    border: 1px solid #c0c0c0;
+
+    &:focus {
+      border: 1.9px solid $primary-text;
+      box-shadow: none;
+    }
+  }
+
+  .log-in {
+    background-color: $primary-text;
+    color: #fff;
+    width: 90%;
+    border: none;
+    line-height: 2.5;
+    border-radius: 4px;
+    margin: 2rem 0 1rem 0;
+
+    a {
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+
+  .log-in-google {
+    background-color: #fff;
+    border-radius: 8px;
+    border: 1px solid $primary-text;
+    width: 80%;
+    line-height: 0;
+    padding: 0.6rem;
+
+    span p {
+      color: #6a6969;
+      font-weight: 500;
+      font-size: 0.7rem;
+      margin-bottom: 0;
+      margin-left: 10px;
+    }
+
+    span img {
+      width: 12%;
+    }
+
+    span {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  label {
+    color: #6a6969;
+    font-weight: 500;
+    font-size: 1rem;
+    margin-bottom: 0.8rem;
+  }
+
+  #or {
+    color: #6a6969;
+    font-weight: 500;
+    font-size: 0.7rem;
+  }
+
+  .signup {
+    color: $primary-text;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+
+  }
+}
+
+.login {
+  &-otpform {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @extend %custom-form;
+
+    h5 {
+      font-weight: 700;
+      font-size: 2rem;
+      color: #333333;
+    }
+
+    #or {
+      font-size: 0.8rem;
+      color: #333333;
+    }
+  }
+
+  &-form {
+    padding: 2rem;
+    @extend %custom-form
+
+  }
+}
+
+%page-loader {
+  height: 5px;
+  background-image: linear-gradient(to right, $primary-text 50%, #fff 50%);
+  margin-top: 0.1rem !important;
+  border: 1px solid #b6b4b4;
+  margin-bottom: 1rem;
+}
+
+.signup-page-step-loader {
+  @extend %page-loader;
+}
+
+.signup-page-step-loader2 {
+  @extend %page-loader;
+  background-image: none;
+  background-color: $primary-text;
+}
+
+
+.phone-container {
+  display: inline-block;
+  position: relative;
+
+}
+
+#phone-domicile {
+  text-align: initial;
+}
+
+#phone-domicile label {
+  margin-bottom: 0 !important;
+}
+
+#phone-domicile .span-container {
+  background-color: #f7f7f7;
+  width: 20%;
+  border: 1px solid silver;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 9px;
+  border-top-left-radius: 10px !important;
+  border-bottom-left-radius: 10px !important;
+  border-right: none !important;
+
+  &:active {
+    border: 1px solid $primary-text;
+  }
+}
+
+.phone-control {
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+  border-left: none !important;
+
+  &:focus {
+    #phone-domicile .span-container {
+      border: 1px solid $primary-text;
+    }
+  }
+}
+
+#phone-domicile .span-rule {
+  height: 1rem;
+  width: 0.2px;
+  background-color: #b6b4b4;
+}
+
+.phone-country {
+  width: 55%;
+  height: 1.3rem;
+}
+
+.signup-container .next-step {
+  display: none;
+}
+
+.signup-container {
+  .next-step {
+    &.show {
+      display: block;
+    }
+  }
+}
+
+.hide {
+  display: none;
+}
+
+.terms-condition {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  input {
+    height: 1.5rem;
+    width: 1rem;
+    border-radius: 0 !important;
+  }
+
+  p {
+    color: $primary-text;
+    font-size: 11px;
+    margin-bottom: 0;
+    margin-left: 1rem;
+  }
+
+}
+
+.segmented-input {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  width: 85%;
+}
+
+.segmented-input input {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 20px;
+  text-align: center;
+}
+
+ 

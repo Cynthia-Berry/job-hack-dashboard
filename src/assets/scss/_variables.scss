@@ -1,0 +1,105 @@
+$sidebar-width: 16em;
+$header-height: 4.5em;
+
+/*misc colours*/
+$white: #ffffff;
+$dark: #3b4863;
+$black: #000000;
+$primary: #91842c;
+$secondary: #3dc2ff;
+$success: #19b159;
+$warning: #ff9b21;
+$danger: #fd6074;
+$info: #6c79d3;
+$background: #E5E5E5;
+$disabled-bg: #2c389180;
+$form-label: #333333;
+$form-field: #F7F7F7;
+$notify-bg: #FEF8F8;
+$input-border: #C0C0C0;
+$settings-border: #DEDEDE;
+$settings-text-warn: #BB0303;
+$settings-success: #145105;
+
+/*Primary colors*/
+$primary-brand: #2C3891;
+$primary-bg: #2C3891;
+$primary-text: #2C3891;
+$primary-hover: #7c5df5;
+$primary-active: #2C3891;
+$primary-transparent: rgba(134, 103, 255, 0.13);
+
+/*Secondary colors*/
+$secondary-brand: #8667ff;
+$secondary-bg: #7c5df5;
+$secondary-text: #7c5df5;
+$secondary-hover: #7c5df5;
+$secondary-active: #7c5df5;
+$secondary-transparent: rgba(134, 103, 255, 0.13);
+
+/*Success colors*/
+$success-brand: #8667ff;
+$success-bg: #7c5df5;
+$success-text: #7c5df5;
+$success-hover: #7c5df5;
+$success-active: #7c5df5;
+$success-transparent: rgba(134, 103, 255, 0.13);
+
+/*Info colors*/
+$info-brand: #8667ff;
+$info-bg: #7c5df5;
+$info-text: #7c5df5;
+$info-hover: #7c5df5;
+$info-active: #7c5df5;
+$info-transparent: rgba(134, 103, 255, 0.13);
+
+/*Danger colors*/
+$danger-brand: #8667ff;
+$danger-bg: #7c5df5;
+$danger-text: #7c5df5;
+$danger-hover: #7c5df5;
+$danger-active: #7c5df5;
+$danger-transparent: rgba(134, 103, 255, 0.13);
+
+/*gray variables*/
+$gray-100: #eaeafb;
+$gray-200: #d0d0ec;
+$gray-300: #babade;
+$gray-400: #8f8fb7;
+$gray-500: #717196;
+$gray-600: #4f4f71;
+$gray-700: #3c3c5d;
+$gray-800: #262644;
+$gray-900: #1b1b33;
+
+/*white variables*/
+$white-1: rgba(255, 255, 255, 0.1);
+$white-2: rgba(255, 255, 255, 0.2);
+$white-3: rgba(255, 255, 255, 0.3);
+$white-4: rgba(255, 255, 255, 0.4);
+$white-5: rgba(255, 255, 255, 0.5);
+$white-6: rgba(255, 255, 255, 0.6);
+$white-7: rgba(255, 255, 255, 0.7);
+$white-8: rgba(255, 255, 255, 0.8);
+$white-9: rgba(255, 255, 255, 0.9);
+$white-05: rgba(255, 255, 255, 0.05);
+$white-08: rgba(255, 255, 255, 0.08);
+$white-75: rgba(255, 255, 255, 0.075);
+
+/*black variables*/
+$black-1: rgba(0, 0, 0, 0.1);
+$black-2: rgba(0, 0, 0, 0.2);
+$black-3: rgba(0, 0, 0, 0.3);
+$black-4: rgba(0, 0, 0, 0.4);
+$black-5: rgba(0, 0, 0, 0.5);
+$black-6: rgba(0, 0, 0, 0.6);
+$black-7: rgba(0, 0, 0, 0.7);
+$black-8: rgba(0, 0, 0, 0.8);
+$black-9: rgba(0, 0, 0, 0.9);
+$black-05: rgba(0, 0, 0, 0.05);
+
+/*Dark Theme*/
+$dark-theme: var(--dark-theme);
+$dark-body: var(--dark-body);
+$dark-color: var(--dark-color);
+$dark-border: var(--dark-border);

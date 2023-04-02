@@ -1,0 +1,101 @@
+@media (max-width: 992px) {
+  .header {
+    padding-left: 35px;
+    padding-right: 35px;
+
+    &-end {
+
+      width: 100%;
+
+      &-profile {
+        border: none;
+        order: 1;
+
+        p {
+          color: #333333;
+        }
+
+        .role-text {
+          font-style: normal;
+          font-weight: bold;
+        }
+      }
+
+      &-notif {
+        order: 2;
+        margin-left: auto;
+      }
+
+      .navbar-toggler {
+        display: flex;
+        order: 3;
+      }
+
+    }
+
+  }
+
+  .sidebar {
+    left: auto;
+    margin-top: 0;
+  }
+  .app-wrapper {
+    margin-left: 0;
+  }
+  .booking {
+    padding-left: 65px;
+
+    &-direct {
+      left: 35px;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .header {
+    border: none;
+    padding: 1rem 3rem 0.5rem;
+  }
+  .app-wrapper {
+    background-color: #ffffff;
+  }
+  .main {
+
+    &-btn {
+      width: 30%;
+    }
+
+    &-table {
+      .table-md-bod {
+        border: 2px solid #DFE0EB;
+        border-radius: 3px;
+      }
+
+      &-data {
+        tbody {
+          tr {
+
+            &:last-child {
+              td {
+                border-bottom: none;
+              }
+            }
+          }
+        }
+      }
+    }
+
+  }
+
+}
+
+@media (max-width: 992px) {
+  .header {
+    padding: 1rem;
+  }
+  .main {
+    &-btn {
+      width: 80%;
+    }
+  }
+}
