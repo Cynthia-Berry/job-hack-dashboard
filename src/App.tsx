@@ -7,11 +7,12 @@ import Register from "./pages/authentication/register/Register";
 import Home from "./pages/dashboard/home/Home";
 import Profile from "./pages/dashboard/profile/Profile";
 
-import Error404 from "./pages/misc/Error/error404";
 import Error401 from "./pages/misc/Error/Error401";
+import Error403 from "./pages/misc/Error/Error403";
+import Error404 from "./pages/misc/Error/error404";
 
 
-const isAuthenticated = false;
+const isAuthenticated = true;
 
 const AuthenticatedRoutes = () => {
   if(isAuthenticated) return <Outlet/>
@@ -37,6 +38,7 @@ const App = () => {
           <Route path="profile" element={<Profile/>}/>
           <Route path="*" element={<Error404/>}/>
         </Route>
+        <Route path="/403" element={<Error403/>}/>
       </Routes>
     </Router>
   );

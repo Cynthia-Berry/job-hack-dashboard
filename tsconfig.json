@@ -22,7 +22,6 @@
   },
   "include": [
     "src",
-    "src/assets",
-    "src/assets/scss",
-  ]
+  ],
+  "typeRoots": ["node_modules/@types", "src/types"]
 }
