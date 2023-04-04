@@ -1,0 +1,8 @@
+@use './src/assets/scss/variables';
+
+button.bg-dark {
+  &:hover, &:focus {
+    background-color: variables.$black !important;
+  }
+}
+

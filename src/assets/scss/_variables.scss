@@ -1,16 +1,18 @@
-$sidebar-width: 16em;
+$sidebar-width: 15em;
 $header-height: 4.5em;
 
 /*misc colours*/
 $white: #ffffff;
-$dark: #3b4863;
+$light: #fafafa;
+$dark: #1C1917;
 $black: #000000;
-$primary: #91842c;
-$secondary: #3dc2ff;
-$success: #19b159;
-$warning: #ff9b21;
-$danger: #fd6074;
-$info: #6c79d3;
+$primary: #DE461B;
+$secondary: #507fcf;
+$info: #AF65A5;
+$tertiary: #271E43;
+$success: #28a745;
+$warning: #DE461B;
+$danger: #CD113B;
 $background: #E5E5E5;
 $disabled-bg: #2c389180;
 $form-label: #333333;
@@ -22,44 +24,54 @@ $settings-text-warn: #BB0303;
 $settings-success: #145105;
 
 /*Primary colors*/
-$primary-brand: #2C3891;
-$primary-bg: #2C3891;
-$primary-text: #2C3891;
-$primary-hover: #7c5df5;
-$primary-active: #2C3891;
-$primary-transparent: rgba(134, 103, 255, 0.13);
+$primary-brand: $primary;
+$primary-bg: $primary;
+$primary-text: lighten($primary, 15%);
+$primary-hover: lighten($primary, 15%);
+$primary-active: lighten($primary, 15%);
+$primary-transparent: rgba(222, 70, 27, 0.13);
 
 /*Secondary colors*/
-$secondary-brand: #8667ff;
-$secondary-bg: #7c5df5;
-$secondary-text: #7c5df5;
-$secondary-hover: #7c5df5;
-$secondary-active: #7c5df5;
-$secondary-transparent: rgba(134, 103, 255, 0.13);
-
-/*Success colors*/
-$success-brand: #8667ff;
-$success-bg: #7c5df5;
-$success-text: #7c5df5;
-$success-hover: #7c5df5;
-$success-active: #7c5df5;
-$success-transparent: rgba(134, 103, 255, 0.13);
+$secondary-brand: $secondary;
+$secondary-bg: $secondary;
+$secondary-text: lighten($secondary, 15%);
+$secondary-hover: lighten($secondary, 15%);
+$secondary-active: lighten($secondary, 15%);
+$secondary-transparent: rgba(251, 146, 60, 0.13);
 
 /*Info colors*/
-$info-brand: #8667ff;
-$info-bg: #7c5df5;
-$info-text: #7c5df5;
-$info-hover: #7c5df5;
-$info-active: #7c5df5;
-$info-transparent: rgba(134, 103, 255, 0.13);
+$info-brand: $info;
+$info-bg: $info;
+$info-text: lighten($info, 15%);
+$info-hover: lighten($info, 15%);
+$info-active: lighten($info, 15%);
+$info-transparent: rgba(175, 101, 165, 0.13);
+
+/*Tertiary colors*/
+$info-brand: $tertiary;
+$info-bg: $tertiary;
+$info-text: lighten($tertiary, 15%);
+$info-hover: lighten($tertiary, 15%);
+$info-active: lighten($tertiary, 15%);
+$info-transparent: rgba(39, 30, 67, 0.13);
+
+
+/*Success colors*/
+$success-brand: $success;
+$success-bg: $success;
+$success-text: lighten($success, 15%);
+$success-hover: lighten($success, 15%);
+$success-active: lighten($success, 15%);
+$success-transparent: rgba(25, 177, 89, 0.13);
+
 
 /*Danger colors*/
-$danger-brand: #8667ff;
-$danger-bg: #7c5df5;
-$danger-text: #7c5df5;
-$danger-hover: #7c5df5;
-$danger-active: #7c5df5;
-$danger-transparent: rgba(134, 103, 255, 0.13);
+$danger-brand: $danger;
+$danger-bg: $danger;
+$danger-text: lighten($danger, 15%);
+$danger-hover: lighten($danger, 15%);
+$danger-active: lighten($danger, 15%);
+$danger-transparent: rgba(253, 96, 116, 0.13);
 
 /*gray variables*/
 $gray-100: #eaeafb;

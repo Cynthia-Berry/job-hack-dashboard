@@ -2,6 +2,7 @@ import {Provider} from "react-redux";
 import {createRoot} from 'react-dom/client';
 
 import "./assets/scss/style.scss";
+import "./assets/scss/icons.scss";
 import "./assets/scss/extras.scss";
 import './index.css';
 

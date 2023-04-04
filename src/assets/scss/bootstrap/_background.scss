@@ -1,0 +1,244 @@
+@use './src/assets/scss/variables';
+
+
+.bg-white {
+  background-color: variables.$white !important;
+}
+
+.bg-transparent {
+  background-color: transparent !important;
+}
+
+.bg-white-1 {
+  background-color: variables.$white-1;
+}
+
+.bg-white-2 {
+  background-color: variables.$white-2;
+}
+
+.bg-white-3 {
+  background-color: variables.$white-3;
+}
+
+.bg-white-4 {
+  background-color: variables.$white-4;
+}
+
+.bg-white-5 {
+  background-color: variables.$white-5;
+}
+
+.bg-white-6 {
+  background-color: variables.$white-6;
+}
+
+.bg-white-7 {
+  background-color: variables.$white-7;
+}
+
+.bg-white-8 {
+  background-color: variables.$white-8;
+}
+
+.bg-white-9 {
+  background-color: variables.$white-9;
+}
+
+.bg-black-1 {
+  background-color: variables.$black-1;
+}
+
+.bg-black-2 {
+  background-color: variables.$black-2;
+}
+
+.bg-black-3 {
+  background-color: variables.$black-3;
+}
+
+.bg-black-4 {
+  background-color: variables.$black-4;
+}
+
+.bg-black-5 {
+  background-color: variables.$black-5;
+}
+
+.bg-black-6 {
+  background-color: variables.$black-6;
+}
+
+.bg-black-7 {
+  background-color: variables.$black-7;
+}
+
+.bg-black-8 {
+  background-color: variables.$black-8;
+}
+
+.bg-black-9 {
+  background-color: variables.$black-9;
+}
+
+.bg-primary {
+  background-color: variables.$primary !important;
+}
+
+a.bg-primary {
+  &:hover, &:focus {
+    background-color: lighten(variables.$primary, 10%)  !important;
+  }
+}
+
+button.bg-primary {
+  &:hover, &:focus {
+    background-color: lighten(variables.$primary, 10%) !important;
+  }
+}
+
+.bg-secondary {
+  background-color: variables.$secondary !important;
+}
+
+a.bg-secondary {
+  &:hover, &:focus {
+    background-color: darken(variables.$secondary, 10%) !important;
+  }
+}
+
+button.bg-secondary {
+  &:hover, &:focus {
+    background-color: darken(variables.$secondary, 10%) !important;
+  }
+}
+
+.bg-success {
+  background-color: variables.$success !important;
+}
+
+a.bg-success {
+  &:hover, &:focus {
+    background-color: lighten(variables.$success, 10%) !important;
+  }
+}
+
+button.bg-success {
+  &:hover, &:focus {
+    background-color: lighten(variables.$success, 10%) !important;
+  }
+}
+
+.bg-info {
+  background-color: variables.$info !important;
+}
+
+a.bg-info {
+  &:hover, &:focus {
+    background-color: lighten(variables.$info, 10%) !important;
+  }
+}
+
+button.bg-info {
+  &:hover, &:focus {
+    background-color: lighten(variables.$info, 10%) !important;
+  }
+}
+
+.bg-tertiary {
+  background-color: variables.$tertiary !important;
+}
+
+a.bg-info {
+  &:hover, &:focus {
+    background-color: lighten(variables.$tertiary, 10%) !important;
+  }
+}
+
+button.bg-info {
+  &:hover, &:focus {
+    background-color: lighten(variables.$tertiary, 10%) !important;
+  }
+}
+
+.bg-warning {
+  background-color: variables.$warning  !important;
+}
+
+a.bg-warning {
+  &:hover, &:focus {
+    background-color: lighten(variables.$warning, 10%) !important;
+  }
+}
+
+button.bg-warning {
+  &:hover, &:focus {
+    background-color: lighten(variables.$warning, 10%) !important;
+  }
+}
+
+.bg-danger {
+  background-color: variables.$danger !important;
+}
+
+a.bg-danger {
+  &:hover, &:focus {
+    background-color: lighten(variables.$danger, 10%) !important;
+  }
+}
+
+button.bg-danger {
+  &:hover, &:focus {
+    background-color: lighten(variables.$danger, 10%) !important;
+  }
+}
+
+.bg-light {
+  background-color: variables.$light  !important;
+  color:#55556b;
+}
+
+a.bg-light {
+  &:hover, &:focus {
+    background-color: darken(variables.$light, 10%) !important;
+  }
+}
+
+button.bg-light {
+  &:hover, &:focus {
+    background-color: darken(variables.$light, 10%) !important;
+  }
+}
+
+.bg-dark {
+  background-color: variables.$dark !important;
+}
+
+a.bg-dark {
+  &:hover, &:focus {
+    background-color: lighten(variables.$dark, 10%) !important;
+  }
+}
+
+button.bg-dark {
+  &:hover, &:focus {
+    background-color: lighten(variables.$dark, 10%) !important;
+  }
+}
+
+.bg-primary-linear-gradient {
+  background: linear-gradient(315deg, variables.$primary 0%, variables.$secondary 100%);
+}
+
+.bg-secondary-linear-gradient {
+  background: linear-gradient(315deg, variables.$info 0%, variables.$tertiary 100%);
+}
+
+.bg-primary-gradient {
+  background: radial-gradient(74.58% 100% at 50% 100%, variables.$primary 0%, variables.$secondary 100%);
+}
+
+.bg-secondary-gradient {
+  background: radial-gradient(74.58% 100% at 50% 100%, variables.$info 0%, variables.$tertiary 100%);
+}
+
