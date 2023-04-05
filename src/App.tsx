@@ -10,15 +10,12 @@ import Profile from "./pages/dashboard/profile/Profile";
 import Error401 from "./pages/misc/Error/Error401";
 import Error403 from "./pages/misc/Error/Error403";
 import Error404 from "./pages/misc/Error/error404";
-
-
-const isAuthenticated = true;
+import TokenHelper from "./utils/helpers/tokenHelper";
 
 const AuthenticatedRoutes = () => {
-  if(isAuthenticated) return <Outlet/>
+  if(TokenHelper.checkIfLoggedIn()) return <Outlet/>
   else return <Navigate to="/auth/login" replace/>;
 };
-
 
 const App = () => {
   return (
@@ -34,7 +31,7 @@ const App = () => {
         </Route>
 
         <Route element={<AuthenticatedRoutes/>}>
-          {['', 'home', 'dashboard'].map(path => <Route path={path} key={path} element={<Home/>}/>)}
+          {['/', 'home', 'dashboard'].map(path => <Route path={path} key={path} element={<Home/>}/>)}
           <Route path="profile" element={<Profile/>}/>
           <Route path="*" element={<Error404/>}/>
         </Route>
