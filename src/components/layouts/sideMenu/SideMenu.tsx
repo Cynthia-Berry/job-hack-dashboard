@@ -5,7 +5,7 @@ import {menuType} from "../../../utils/helpers/constants";
 const SideMenu: FC<{active: string}> = ({active}) => {
 
   return (
-    <div id="sidebar" className="sidebar d-flex flex-column offcanvas-lg offcanvas-end">
+    <div id="sidebar" className="sidebar d-flex flex-column offcanvas-lg offcanvas-start">
       <div className="sidebar-logo d-lg-none d-flex align-items-center justify-content-between">
         <NavLink to="/">
           <h4>JOB HACK</h4>

@@ -23,29 +23,10 @@
   height: variables.$header-height;
   background-color: variables.$white;
   border: 2px solid variables.$form-field;
-
-  &-end {
-    &-notif {
-      display: flex;
-    }
-
-    &-profile {
-      border-left: 2px solid #DFE0EB;
-
-      .role-text {
-        font-style: italic;
-      }
-
-      .type {
-        font-style: italic;
-        font-size: 11px;
-      }
-    }
-  }
 }
 
 .sidebar {
-  width: variables.$sidebar-width;
+  width: variables.$sidebar-width !important;
   position: fixed;
   top: 0;
   bottom: 0;
@@ -99,6 +80,7 @@
   margin-top: variables.$header-height;
   margin-left: variables.$sidebar-width;
   background-color: lighten(variables.$primary, 49.6%) !important;
+  min-height: 92.4vh;
 }
 
 .modal {

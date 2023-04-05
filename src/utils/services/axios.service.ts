@@ -1,13 +1,11 @@
 import axios from "axios";
 import CacheHelper from "../helpers/cacheHelper";
-import TokenHelpers from "../helpers/tokenHelpers";
+import TokenHelpers from "../helpers/tokenHelper";
 import CookieHelper from "../helpers/cookieHelper";
 import {Configs, GeneralAppInfo} from "../helpers/constants";
 
 
-const instance = axios.create({
-  baseURL: GeneralAppInfo.BASE_URL,
-});
+const instance = axios.create({baseURL: GeneralAppInfo.BASE_URL});
 
 instance.interceptors.request.use(config => {
   let token = TokenHelpers.getToken(), authorization = `JWT ${token}`, contentType = 'application/json';
